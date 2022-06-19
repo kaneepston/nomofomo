@@ -5,9 +5,25 @@
          url('../fonts/ABCFavoritMono-Medium-Trial.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Medium.ttf') format('truetype'),
+       url('../fonts/DMSans-Bold.ttf') format('truetype');
+}
+
+body, html {
+  height: 100%;
+}
+
 body {
    background-color: #F5F5F5;
+   background-image: url("../img/background.webp");
+   height: 100%; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
+
 
 #logo {
   position: relative;
@@ -62,7 +78,7 @@ form {
 #email, #button {
   font-family: 'ABCFavoritMonoTrial', sans-serif;
   font-weight: 500; 
-  size: 16px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -75,6 +91,8 @@ form {
   margin-right: 8px;
   text-transform: uppercase;
   font-feature-settings: 'case' on;
+  direction: ltr;
+  text-indent: 20px;
 }
 
 #button {
@@ -83,6 +101,11 @@ form {
   height: 64px;
   border-radius: 12px;
   color: white;
-  font-size: 16px;
   border-color: transparent;
 }
+
+input:focus {
+    outline: none !important;
+}
+
+
