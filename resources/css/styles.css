@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'ABCFavoritMonoTrial';
+    src: url('../fonts/ABCFavoritMono-Medium-Trial.otf') format('otf'),
+         url('../fonts/ABCFavoritMono-Medium-Trial.woff') format('woff'),
+         url('../fonts/ABCFavoritMono-Medium-Trial.woff2') format('woff2');
+}
+
+body {
+   background-color: #F5F5F5;
+}
+
+#logo {
+  position: relative;
+  top: 32px;
+  left: 32px;
+}
+
+section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+h2 { 
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+    /* or 64px */
+  letter-spacing: -2px;
+  text-align: center;
+  font-feature-settings: 'case' on;
+}
+
+p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  /* or 133% */
+
+  letter-spacing: -0.75px;
+  font-feature-settings: 'case' on;
+  text-align: center;
+  max-width: 433px;
+  max-height: 64px;
+  margin-top: -10px; 
+}
+
+form {
+  margin-top: 72px;
+}
+
+#email, #button {
+  font-family: 'ABCFavoritMonoTrial', sans-serif;
+  font-weight: 500; 
+  size: 16px;
+  line-height: 150%;
+}
+
+#email {
+  border-radius: 12px;
+  border-color: transparent;
+  width: 320px;
+  height: 64px;
+  color: grey;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-feature-settings: 'case' on;
+}
+
+#button {
+  background-color: #000000;
+  width: 168px;
+  height: 64px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  border-color: transparent;
+}
