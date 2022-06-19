@@ -36,6 +36,7 @@ h2 {
   letter-spacing: -2px;
   text-align: center;
   font-feature-settings: 'case' on;
+  max-width: 867px;
 }
 
 p {
