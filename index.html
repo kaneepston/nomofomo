@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,39 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./resources/css/styles.css">
-        <script src=”https://unpkg.com/axios/dist/axios.min.js"></script>
-
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <script>
-            var thisForm = document.getElementById("contactForm");
-            const headers_ = {
-                 'Authorization': 'Bearer keyMw0j27QSYJ8L3X',
-                 'Content-Type': 'application/json'
-            };
-            // When the form is submitted...
-            thisForm.addEventListener("submit", function(event) {
-               event.preventDefault();
-            // POST the data
-            axios.post('https://api.airtable.com/v0/appxLMALP6GzRfyW3/Contact%20info',
-            {
-               "fields": {
-                "Email Address": document.getElementById("email").value
-            }
-            }, {headers: headers_}
-            )
-            .then((resp) => {
-              console.log("success!")
-            })
-            .catch(function (error) {
-              console.log(error);
-            });
-            });
-            </script>
-        
 
         <header>
             <img src="resources/img/logo.svg" id="logo" alt="logo">
@@ -53,9 +22,9 @@
 
             <p>Pick projects you love & get updates delivered directly to your inbox</p>
 
-            <form id="contactForm">
-              <input type="text" id="email" placeholder="YOUR EMAIL">
-              <input type="submit" id="submit" value="JOIN WAITLIST">
+            <form id="contactForm" action="https://getform.io/f/6c46b473-6df2-43fb-8975-0cc0d0def0b2" method="POST">
+              <input type="text" name="email" id="email" placeholder="YOUR EMAIL">
+              <input type="submit" name="submit" id="submit" value="JOIN WAITLIST">
             </form> 
         </section>
     </body>
