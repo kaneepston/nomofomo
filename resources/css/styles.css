@@ -140,10 +140,6 @@ input:focus {
     background-size: cover;
   }
 
-  section {
-    max-width: 336px;
-  }
-
   .contactForm {
     flex-direction: column;
     align-items: stretch;
