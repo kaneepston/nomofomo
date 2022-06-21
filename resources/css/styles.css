@@ -53,7 +53,6 @@ h2 {
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
-    /* or 64px */
   letter-spacing: -2px;
   text-align: center;
   font-feature-settings: 'case' on;
@@ -67,8 +66,6 @@ p {
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
-  /* or 133% */
-
   letter-spacing: -0.75px;
   font-feature-settings: 'case' on;
   text-align: center;
@@ -167,7 +164,6 @@ input:focus {
     font-weight: 700;
     font-size: 32px;
     line-height: 125%; 
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -195,6 +191,61 @@ input:focus {
   } 
 
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  h2 { 
+    font-size: 48px;
+  }
+  
+  p {
+    font-size: 22px;
+  }
+  
+  #email { 
+    width: 335px;
+    height: 64px;
+    margin-right: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #submit {
+    width: 339px;
+    height: 68px;
+    margin-top: 8px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  h2 { 
+    font-size: 48px;
+  }
+  
+  p {
+    font-size: 22px;
+  }
+
+  #email { 
+    width: 335px;
+    height: 64px;
+    margin-right: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  #submit {
+    width: 339px;
+    height: 68px;
+    margin-top: 8px;
+    padding: 0px;
+  }
+}
+
+
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
