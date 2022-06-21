@@ -76,10 +76,6 @@ p {
   margin-top: -10px; 
 }
 
-form {
-  margin-top: 72px;
-}
-
 #email, #submit {
   font-family: 'ABCFavoritMonoTrial', sans-serif;
   font-weight: 500; 
@@ -98,6 +94,7 @@ form {
   font-feature-settings: 'case' on;
   direction: ltr;
   text-indent: 20px;
+  box-shadow: 0px 1px 4px rgba(234, 234, 234, 0.64), 0px 8px 16px rgba(234, 234, 234, 0.64), 0px 24px 24px rgba(234, 234, 234, 0.64);
 }
 
 #submit {
@@ -107,6 +104,7 @@ form {
   border-radius: 12px;
   color: white;
   border-color: transparent;
+  box-shadow: 0px 1px 4px rgba(234, 234, 234, 0.64), 0px 8px 16px rgba(234, 234, 234, 0.64), 0px 24px 24px rgba(234, 234, 234, 0.64);
 }
 
 #submit:hover {
@@ -118,4 +116,87 @@ input:focus {
     outline: none !important;
 }
 
+.contactForm {
+  margin-top: 72px;
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: center;
+}
 
+#illustration {
+  width: 100%; 
+  max-width: 360px;
+  height: auto;
+} 
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    background-color: #F5F5F5;
+    background-image: url("../img/background_mobile.webp");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section {
+    max-width: 336px;
+  }
+
+  .contactForm {
+    flex-direction: column;
+    align-items: stretch;
+    width: 339px;
+  }
+  
+  #email { 
+    width: 335px;
+    height: 64px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  #submit {
+    width: 339px;
+    height: 68px;
+    margin-top: 8px;
+    padding: 0px;
+  }
+  
+  
+  h2 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%; 
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-feature-settings: 'case' on;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.75px;
+    font-feature-settings: 'case' on;
+    margin-bottom: 72px;
+  }
+
+  
+
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
