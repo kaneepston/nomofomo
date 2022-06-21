@@ -187,7 +187,11 @@ input:focus {
     margin-bottom: 72px;
   }
 
-  
+  #illustration {
+    width: 100%; 
+    max-width: 252px;
+    height: auto;
+  } 
 
 }
 
