@@ -51,6 +51,18 @@
                 <input name="formto_redirect" type="hidden" value="https://nomo.lol/thankyou.html">
                 <input name="formto_error" type="hidden" value="https://nomo.lol/error.html">
             </form>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <div id="pageloader">
+              <img src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" alt="processing..." />
+            </div>
+            <script>
+                $(document).ready(function(){
+                $("#contactForm").on("submit", function(){
+                $("#pageloader").fadeIn();
+                });//submit
+                });//document ready
+            </script>
         </section>
     </body>
 </html>
